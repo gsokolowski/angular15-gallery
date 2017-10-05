@@ -1,16 +1,16 @@
-## This is frontend done in Angular 1.5
-- backend for this projec is here  bachttps://github.com/gsokolowski/laravel-gallery
+## This is front end implemented in Angular 1.5
+- back end for this project is here https://github.com/gsokolowski/laravel-gallery
 - please clone backend first and import data again as I've updated data factory in backend project
 
-## Frontend does
-- shows list of active images
-- shows list of deleted images
-- allows to delete image
-- allows to restore deleted image
-- allows to download image
+## Front end allwes user to:
+- see list of active images
+- see list of deleted images
+- delete image
+- restore deleted image
+- download image
 
-## Pull backend first otherwise frontend will not work
+## Pull back end first otherwise front end will not work
 
-## Frontend will look for virtual host http://laravel-gallery.local so you need to configure you backend first
+- front end will look for virtual host http://laravel-gallery.local so you need to configure you backend first
 
 
