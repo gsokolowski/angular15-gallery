@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<!-- myApp i a name of module and any angular application needs to be defined as module
+if you seriosely thinking about building angular apps -->
+
+<!--
+- Single Page Application, url is changing application is not refreshing, what changes is part of application
+If user goes to particular route, then HTML page will be loaded in to the application and that part will be displayed
+In angularJs Single Page Applications are used through roots
+
+- Route maps to url path and also specify controller and template for that url and when url changes in the browser,
+the angular is going to change the controller and view template that is using is going to display that to you
+
+- Templates
+
+First step is to add angular-route.min.js to script in this index and also add ngRoute dependency to module app.js
+-->
+
+<head>
+    <title>Angular Simple Page App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body ng-cloak>
+
+
+
+    <!-- angular js works with templates and this is the place where template views will be loaded
+    through directive ng-view-->
+
+
+
+        <!--ng-view needed by router
+            Your application needs a container to put the content provided by the routing.
+            This container is the ng-view directive.
+            There are three different ways to include the ng-view directive in your application:-->
+
+
+    <div ng-view id="content"></div>
+
+
+    <div id="background"></div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+
+    <!-- app.js is a module -->
+    <script src="app.js"></script>
+
+    <!-- code seperation app.js and controller.js-->
+    <script src="header/header-controller.js"></script>
+    <script src="active/active-controller.js"></script>
+    <script src="deleted/deleted-controller.js"></script>
+
+    <!-- datafactory -->
+    <script src="datafactory/datafactory.js"></script>
+
+
+    <!--
+    // You need to start http server to be able to run SPA with templates in files
+    // php -S localhost:8887
+    // and call http://localhost:8887 and works
+
+    // http://localhost:8000/#/
+    // http://localhost:8000/#/active
+    // http://localhost:8000/#/deleted
+    -->
+
+</body>
+</html>

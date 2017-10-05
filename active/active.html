@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="header">
+        <h1>My Library</h1>
+
+        <div id="viewswitch">
+            <div class="btn-group btn-group-lg">
+                <a href="#/active" class="btn btn-primary" role="button">Active</a>
+                <a href="#/deleted" class="btn btn-default" role="button">Deleted</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <div class="tz-gallery">
+            <div class="row">
+
+                <div ng-repeat="gallery in vm.galleries" class="col-sm-6 col-md-3" >
+                    <div class="thumbnail">
+                        <img ng-src="http://laravel-gallery.local/images/{{gallery.image}}"  alt="{{ gallery.title }}" ng-click="ShowHide(gallery)">
+                        <div class="caption">
+                            <h3>{{ gallery.title }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="actionbar" ng-show="IsVisible">
+            <span class="glyphicon glyphicon-trash" ng-click="deleteImage()"></span>
+            <span class="glyphicon glyphicon-download-alt" ng-click="downloadImage()"></span>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,128 @@
+body {
+    background-color: #eef1f5;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+}
+
+.ng-cloak, [ng-cloak], [ng\:cloak] {
+    display: none !important;
+}
+
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    z-index: 1;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+}
+
+#content .header {
+    padding: 60px 40px;
+}
+
+#content .header h1 {
+    text-align: left;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    color: #58595a;
+
+}
+
+#content div#viewswitch {
+    float: right;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+
+    padding: 10px 32px;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+
+}
+
+/* Styles for the gallery */
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.tz-gallery img {
+    border-radius: 2px;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+
+@media (min-width: 400px) {
+    #actionbar {
+        width: 370px;
+    }
+}
+
+@media (min-width: 768px) {
+    #actionbar {
+        width: 730px;
+    }
+}
+
+@media (min-width: 992px) {
+    #actionbar {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #actionbar {
+        width: 1150px;
+    }
+}
+
+
+
+#actionbar {
+    position: fixed;
+    bottom: 0;
+    background: #4a5f82;
+    line-height: 2;
+    text-align: center;
+    color: #042E64;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.glyphicon {
+    font-size: medium;
+    color: #eef1f5;
+}
