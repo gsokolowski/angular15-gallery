@@ -14,3 +14,11 @@
 - front end will look for virtual host http://laravel-gallery.local so you need to configure you backend first
 
 
+## Got this problem?
+
+XMLHttpRequest cannot load No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+## Here is solution
+
+Add extension to google chrome
+(https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-US)
