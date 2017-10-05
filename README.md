@@ -1,6 +1,6 @@
 ## This is front end implemented in Angular 1.5
 - back end for this project is here https://github.com/gsokolowski/laravel-gallery
-- please clone backend first and import data again as I've updated data factory in backend project
+- please clone backend first and import data again as I've updated ApiResponser.php in backend project
 
 ## Front end allwes user to:
 - see list of active images
